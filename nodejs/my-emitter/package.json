@@ -4,7 +4,7 @@
   "description": "An implementation of EventEmitter like class",
   "main": "EventEmitter.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "keywords": [
     "EventEmitter",
@@ -18,5 +18,8 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-jest": "^23.3.0",
     "jest": "^24.9.0"
+  },
+  "jest": {
+    "verbose": true
   }
 }

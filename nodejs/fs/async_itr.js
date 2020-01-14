@@ -7,8 +7,8 @@ async function doWork() {
     const dir = await promisifiedOpendir(process.cwd());
 
     const itr = dir[Symbol.asyncIterator]();
-    const promises = [];
 
+    // eslint-disable-next-line no-await-in-loop
     for (let { done, value } = await itr.next(); !done; { done, value } = await itr.next()) {
         console.log(value);
     }

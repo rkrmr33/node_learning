@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 const fs = require('fs');
 
 const readStream = fs.createReadStream('./somefile.txt');

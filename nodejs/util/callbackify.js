@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 function callbackify(fn) {
     return function (...args) {
         const cb = args[args.length - 1];
@@ -11,7 +12,7 @@ function callbackify(fn) {
     };
 }
 
-function testFunc(name) {
+function testFunc() {
     return new Promise((res, rej) => {
         setTimeout(() => {
             rej(new Error('some error'));
@@ -19,7 +20,7 @@ function testFunc(name) {
     });
 }
 
-testFunc('roi')
+testFunc()
     .then(console.log)
     .catch(console.error);
 

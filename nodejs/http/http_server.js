@@ -3,8 +3,6 @@ const http = require('http');
 const PORT = process.env.PORT || 1337;
 const HOST = process.env.HOST || 'localhost';
 
-const sockets = {};
-
 const server = http.createServer((req, res) => {
     console.log(`${req.url} ${JSON.stringify(req.headers)}`);
     res.writeHead(200, { 'Content-Type': 'text/plain' });

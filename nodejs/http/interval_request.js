@@ -7,17 +7,19 @@ const agent = http.Agent({
 });
 
 const requestOps = {
-    host: 'localhost',
-    port: 1337,
+    host: 'www.weevil.info',
+    port: 80,
     agent,
 };
 
-let repeats = 4;
+let repeats = 1;
 
 function makeRequest() {
     const request = http.request(requestOps, (res) => {
-        res.on('data', (chunk) => {
+        res.setEncoding('utf8');
 
+        res.on('data', (chunk) => {
+            console.log(chunk);
         });
 
         res.on('error', console.error);

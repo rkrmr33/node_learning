@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 const { Socket } = require('net');
 
 const socket = new Socket();

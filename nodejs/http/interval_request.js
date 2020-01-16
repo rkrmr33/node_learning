@@ -41,7 +41,7 @@ function makeRequest() {
             console.log('socket connected');
         });
 
-        socket.on('close', (hadErr) => {
+        socket.on('close', () => {
             console.log(`socket closed: ${agent}`);
         });
     });

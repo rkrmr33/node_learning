@@ -1,0 +1,15 @@
+{
+  "name": "simple_http_server",
+  "version": "1.0.0",
+  "description": "a simple http server with a few user authentication end-points",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Roi Kramer",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2"
+  }
+}

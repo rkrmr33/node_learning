@@ -1,0 +1,23 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "handles all of the notes endpoints",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "roi-kramer",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "redis": "^2.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roikramer120/node_learning.git"
+  }
+}

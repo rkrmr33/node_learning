@@ -1,0 +1,7 @@
+{
+    "name": "logger",
+    "main": "./logger.cjs",
+    "dependencies": {
+        "debug": "^4.1.1"
+    }
+}
